@@ -1,8 +1,69 @@
 .container {
-    height: 8vh;
+    position: fixed;
+    color: gray;
+    font-weight: bold;
+    height: 10vh;
     width: 100%;
     background: var(--background-color);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #BBBCC0, #FFFFFF);
+    box-shadow: 17.12px 17.12px 17px #9B9C9F, -17.12px -17.12px 17px #FFFFFF;
+    user-select: none;
+    text-align: center;
+    border: 0.02px gray;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 4rem;
+    margin-left: 3rem;
+    padding: 1.5em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container > div > span {
+    font-size: 1.5em;
+    background-image: linear-gradient(45deg, #db469f, #2188ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container ul li{
+    font-size: 1.15em;
+    transition: box-shadow 2s;
+    transition-timing-function: linear;
+    display: grid;
+    place-items: center;
+    width: 10rem;
+    padding: 1em;
+    border-radius: 5rem;
+    margin: 3rem;
+    background: linear-gradient(145deg, #FFFFFF, #CACCCF);
+    box-shadow: inset 15.02px 15.02px 20px #DADCDF, inset -15.02px -15.02px 20px #FFFFFF;
+}
+
+.container ul li:hover {
+    box-shadow: 21.02px 21.02px 20px #DADCDF, -21.02px -21.02px 20px #FFFFFF;
+}
+
+.container ul li span:hover {
+    background-image: linear-gradient(45deg, darkblue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+

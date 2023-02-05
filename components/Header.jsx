@@ -1,26 +1,27 @@
 import React from "react";
 import Link from "next/link";
+import styles from './Header.module.css';
 
 export default function Header() {
 
 
     return (
-        <main>
-            <span>Portfolio</span>
+        <main className={styles.container}>
+            <div><span>Portfolio</span></div>
             <ul>
                 <li>
                     <Link href='/'>
-                        Home
+                        <span>Home</span>
                     </Link>
                 </li>
                 <li>
                     <Link href='/projects'>
-                        Projects
+                        <span>Projects</span>
                     </Link>
                 </li>
                 <li>
                     <Link href='/about'>
-                        About Me
+                        <span>About Me</span>
                     </Link>
                 </li>
             </ul>

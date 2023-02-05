@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 :root {
-    --background-color: #232931;
+    --background-color: #fff;
+    --section-height: 90vh;
+    --nav-height: 10vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all 1s ease;
+}
+
+.default-section{
+    width: 100%;
+    height: 100vh;
 }
