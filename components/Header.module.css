@@ -1,5 +1,8 @@
 .container {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     color: gray;
     font-weight: bold;
     height: 10vh;

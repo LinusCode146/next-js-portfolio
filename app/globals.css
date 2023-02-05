@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,12 +10,18 @@
     --nav-height: 10vh;
 }
 
-html {
-    scroll-behavior: smooth;
-    transition: all 1s ease;
+
+::-webkit-scrollbar {
+    width: 1px;
 }
 
-.default-section{
-    width: 100%;
-    height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
