@@ -7,7 +7,7 @@ export default function Header() {
 
     return (
         <main className={styles.container}>
-            <div><span>Portfolio</span></div>
+            <div><span><Link href={'/'}>Portfolio</Link></span></div>
             <ul>
                 <li>
                     <Link href='/'>

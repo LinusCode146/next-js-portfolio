@@ -42,11 +42,12 @@
 .front h1 {
     font-family: 'Nunito', sans-serif !important;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px black;
 }
 
 .back {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
     width: 100%;
@@ -55,8 +56,21 @@
     transform: rotateY(180deg);
 }
 
-.nextImage {
-    width: 10rem;
-    height: 10rem;
+.gitImage {
+    width: 9rem;
+    height: 9rem;
     object-fit: cover;
 }
+
+.gitImageSmall {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
+.visitible {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
