@@ -10,11 +10,9 @@
     --nav-height: 10vh;
 }
 
-
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 0;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -25,3 +23,9 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+
