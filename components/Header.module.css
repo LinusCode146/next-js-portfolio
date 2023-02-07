@@ -1,4 +1,5 @@
 .container {
+    background: black !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -7,12 +8,10 @@
     font-weight: bold;
     height: 11vh;
     width: 100%;
-    background: rgba(255, 255, 255, 0.22);
-    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.22);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(14.1px);
     -webkit-backdrop-filter: blur(14.1px);
-    border: 1px solid rgba(255, 255, 255, 0.38);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +23,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(145deg, #BBBCC0, #FFFFFF);
-    box-shadow: 17.12px 17.12px 17px #9B9C9F, -17.12px -17.12px 17px #FFFFFF;
+    box-shadow: 17.12px 17.12px 17px #9B9C9F;
     user-select: none;
     text-align: center;
     border: 0.02px gray;
@@ -66,7 +65,7 @@
 }
 
 .container ul li:hover {
-    box-shadow: 21.02px 21.02px 20px #DADCDF, -21.02px -21.02px 20px #FFFFFF;
+    box-shadow: 21.02px 21.02px 20px #DADCDF;
 }
 
 .container ul li span:hover {

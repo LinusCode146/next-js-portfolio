@@ -16,18 +16,22 @@ export default function ContactForm() {
     return (
         <div className={styles.formContainer}>
             <form onSubmit={submitHandler}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 <div className={styles.nameContainer}>
-                    <input type="text" placeholder={'First Name'}/>
-                    <input type="text" placeholder={'Last Name'}/>
+                    <input className={styles.FirstNameInput} type="text" placeholder={'First Name'}/>
+                    <input className={styles.LastNameInput} type="text" placeholder={'Last Name'}/>
                 </div>
                 <div className={styles.EmailContainer}>
-                    <input type="text" placeholder={'Email'}/>
+                    <input className={styles.EmailInput} type="email" placeholder={'Your Email'}/>
                 </div>
                 <div className={styles.MessageContainer}>
-                    <input type="text" placeholder={'Your Message'}/>
+                    <textarea className={styles.MessageInput} placeholder={'Your Message'}/>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.submitButton} type="submit">Submit</button>
+                    <button className={styles.submitButton} type="submit"><span>Submit</span></button>
                 </div>
             </form>
         </div>

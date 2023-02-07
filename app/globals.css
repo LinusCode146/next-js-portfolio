@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 html {
@@ -26,6 +26,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background: black;
 }
 
 
