@@ -1,0 +1,56 @@
+
+.formContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer form {
+    position: relative;
+    width: 75vw;
+    height: 75vh;
+    border-radius: 2rem;
+    border: 1px solid gray;
+}
+
+.nameContainer {
+    position: absolute;
+    height: 10rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.EmailContainer {
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    margin-top: 11vh;
+    height: 10rem;
+    display: grid;
+    place-items: center;
+}
+
+.MessageContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 20%;
+    height: 40vh;
+    display: grid;
+    place-items: center;
+}
+
+.buttonContainer {
+    position: absolute;
+}
+
+.submitButton {
+    position: absolute;
+    bottom: 0;
+}
