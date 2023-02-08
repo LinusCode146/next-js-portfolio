@@ -3,6 +3,7 @@
     width: 20rem;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .container > div {
@@ -83,7 +84,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -6px;
+    top: -5px;
     width: 2rem;
     height: 10px;
     background: var(--glow-button-header);

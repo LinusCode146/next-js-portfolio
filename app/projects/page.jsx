@@ -12,22 +12,22 @@ export default function ProjectPage() {
                 <div className={styles.flexArea}>
                     <div className={styles.projectRow}>
                         <ProjectCard link={'https://github.com/LinusCode146/Sudoku_Solver/blob/main/SudokuSolver.py'}
-                                     title={'Sudoku Solver'} content={'aa'} imageSrc={'/github-icon.png'}/>
-                        <ProjectCard link={'https://github.com/LinusCode146/EnergieAmpel'} title={'Energie Ampel'}
-                                     content={'aa'} imageSrc={'/github-icon.png'}/>
+                                     title={'Sudoku Solver'} imageSrc={'/github-icon.png'}/>
+                        <ProjectCard link={'https://github.com/LinusCode146/EnergieAmpel'} visitible={'https://energie-ampel.vercel.app/'} title={'Energie Ampel'}
+                                      imageSrc={'/github-icon.png'}/>
                     </div>
                     <div className={styles.projectRow}>
                         <ProjectCard link={'https://github.com/LinusCode146/next-js-portfolio'} title={'This Portfolio'}
-                                     content={'aa'} imageSrc={'/github-icon.png'}/>
+                                      imageSrc={'/github-icon.png'}/>
                         <ProjectCard
                             link={'https://github.com/LinusCode146/ChessUI/tree/main/Finns%20Geburtstag%20Geschenk'}
-                            title={'Chess GUI'} content={'aa'} imageSrc={'/github-icon.png'}/>
+                            title={'Chess GUI'} imageSrc={'/github-icon.png'}/>
                     </div>
                     <div className={styles.projectRow}>
                         <ProjectCard link={'https://github.com/LinusCode146/ChessComAPI'} title={'Chess.com API'}
-                                     content={'aa'} imageSrc={'/github-icon.png'}/>
+                                     imageSrc={'/github-icon.png'}/>
                         <ProjectCard link={'https://github.com/LinusCode146/AdventOfCode_2022'}
-                                     title={'Advent of Code 2022'} content={'aa'} imageSrc={'/github-icon.png'}/>
+                                     title={'Advent of Code 2022'} imageSrc={'/github-icon.png'}/>
                     </div>
                 </div>
                 <div className={styles.glassBall1}></div>
