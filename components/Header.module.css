@@ -45,33 +45,18 @@
 
 .container ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
+    width: 70vw;
 }
 
-.container ul li{
-    font-size: 1.15em;
-    transition: box-shadow 2s;
-    transition-timing-function: linear;
-    display: grid;
-    place-items: center;
-    width: 10rem;
-    padding: 1em;
-    border-radius: 5rem;
-    margin: 3rem;
-    background: linear-gradient(145deg, #FFFFFF, #CACCCF);
-    box-shadow: inset 15.02px 15.02px 20px #DADCDF, inset -15.02px -15.02px 20px #FFFFFF;
-}
-
-.container ul li:hover {
-    box-shadow: 21.02px 21.02px 20px #DADCDF;
-}
-
-.container ul li span:hover {
-    background-image: linear-gradient(45deg, darkblue, cyan);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.container ul li {
+    position: relative;
+    height: 9rem;
+    width: 17vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

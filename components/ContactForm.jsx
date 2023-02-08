@@ -21,7 +21,7 @@ export default function ContactForm() {
                 <span></span>
                 <span></span>
                 <div className={styles.nameContainer}>
-                    <input className={styles.FirstNameInput} type="text" placeholder={'First Name'}/>
+                    <input autoComplete="off" data-lpignore="true" data-form-type="other" className={styles.FirstNameInput} type="text" placeholder={'First Name'}/>
                     <input className={styles.LastNameInput} type="text" placeholder={'Last Name'}/>
                 </div>
                 <div className={styles.EmailContainer}>
@@ -31,7 +31,7 @@ export default function ContactForm() {
                     <textarea className={styles.MessageInput} placeholder={'Your Message'}/>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.submitButton} type="submit"><span>Submit</span></button>
+                    <button className={styles.submitButton} type="submit">Submit</button>
                 </div>
             </form>
         </div>

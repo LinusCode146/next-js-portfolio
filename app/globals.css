@@ -8,6 +8,7 @@
     --background-color: #fff;
     --section-height: 90vh;
     --nav-height: 10vh;
+    --glow-button-header: linear-gradient(cyan, darkblue);
 }
 
 ::-webkit-scrollbar {
@@ -28,5 +29,6 @@ body {
     overflow-x: hidden;
     background: black;
 }
+
 
 

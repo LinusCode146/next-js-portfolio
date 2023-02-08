@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from './Header.module.css';
+import ButtonHeader from "@/components/ButtonHeader";
 
 export default function Header() {
 
@@ -11,17 +12,17 @@ export default function Header() {
             <ul>
                 <li>
                     <Link href={'/'}>
-                        <span>Home</span>
+                        <ButtonHeader color={'red'} title={'Home'} />
                     </Link>
                 </li>
                 <li>
                     <Link href={'/projects'}>
-                        <span>Projects</span>
+                        <ButtonHeader color={'red'} title={'Projects'} />
                     </Link>
                 </li>
                 <li>
                     <Link href={'/contact'}>
-                        <span>Contact Me</span>
+                        <ButtonHeader color={'red'} title={'Contact'} />
                     </Link>
                 </li>
             </ul>

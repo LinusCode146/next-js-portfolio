@@ -30,7 +30,7 @@
     left: 0;
     width: 100%;
     height: 10px;
-    background: linear-gradient(to right, transparent, green);
+    background: linear-gradient(to right, transparent, darkblue);
     animation: animate1 5s linear infinite;
 }
 
@@ -49,7 +49,7 @@
     right: 0;
     width: 10px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, green);
+    background: linear-gradient(to bottom, transparent, darkblue);
     animation: animate2 5s linear infinite;
     animation-delay: 2.5s;
 }
@@ -68,7 +68,7 @@
     bottom: 0;
     width: 100%;
     height: 10px;
-    background: linear-gradient(to left, transparent, red);
+    background: linear-gradient(to left, transparent, cyan);
     animation: animate3 5s linear infinite;
 }
 
@@ -87,7 +87,7 @@
     left: 0;
     width: 10px;
     height: 100%;
-    background: linear-gradient(to top, transparent, red);
+    background: linear-gradient(to top, transparent, cyan);
     animation: animate4 5s linear infinite;
     animation-delay: 2.5s;
 }
@@ -134,6 +134,7 @@
 
 .buttonContainer {
     position: absolute;
+    height: 4rem;
     left: 0;
     right: 0;
     bottom: 5%;
@@ -143,8 +144,8 @@
 
 .submitButton {
     position: absolute;
+    font-weight: bolder;
     bottom: 0;
-    border: 1px solid white;
     color: white;
     width: 13rem;
     height: 4rem;
@@ -152,6 +153,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    z-index: 1;
+}
+
+.submitButton:hover {
+    animation: animateSubmit 8s linear infinite;
+}
+
+@keyframes animateSubmit {
+    0%{
+        background-position: 0;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.submitButton::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 3rem;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.submitButton:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animateSubmit 8s linear infinite;
 }
 
 .FirstNameInput {
